@@ -55,41 +55,7 @@ This is a technical assessment to evaluate your problem-solving skills and abili
 ---
 
 ## Problems (Choose ONE)
-
-### 1. Dutch Flag Problem
-
-**Description**: Given an array consisting of only 0s, 1s, and 2s, rearrange the elements so that all 0s come first, followed by 1s, and then 2s.
-
-**Constraints**:
-- You must write your own sorting logic from scratch
-- Built-in array methods like `sort()`, `map()`, `filter()` are **NOT ALLOWED**
-
-**Example**:
-```javascript
-// Input:  [2, 0, 1, 2, 0, 1]  
-// Output: [0, 0, 1, 1, 2, 2]
-```
-
-**API Endpoint Specification**:
-- Method: `POST`
-- Path: `/api/dutch-flag`
-- Request Body: 
-```json
-  {
-    "array": [2, 0, 1, 2, 0, 1]
-  }
-```
-- Response:
-```json
-  {
-    "input": [2, 0, 1, 2, 0, 1],
-    "output": [0, 0, 1, 1, 2, 2]
-  }
-```
-
----
-
-### 2. Sort Array by Occurrence
+### 1. Sort Array by Occurrence
 
 **Description**: Sort the given array based on the frequency of each number, with numbers appearing more frequently placed first. If two numbers have the same frequency, sort them in ascending order.
 
@@ -125,7 +91,7 @@ This is a technical assessment to evaluate your problem-solving skills and abili
 
 ---
 
-### 3. Find the Longest Consecutive Sequence
+### 2. Find the Longest Consecutive Sequence
 
 **Description**: Given an unsorted array of numbers, determine the length of the longest consecutive sequence (a sequence where each number increases by 1).
 
@@ -177,7 +143,7 @@ const output = 1; // Duplicates are ignored
 
 ---
 
-### 4. Flatten a Deeply Nested Object
+### 3. Flatten a Deeply Nested Object
 
 **Description**: Create a function that flattens a deeply nested object using dot notation for keys.
 
@@ -235,7 +201,7 @@ const output = 1; // Duplicates are ignored
 
 ---
 
-### 5. Item Stock Forecast
+### 4. Item Stock Forecast
 
 **Description**: Create a function that forecasts item stock for the next 12 months based on monthly loss and restock percentages.
 
@@ -251,14 +217,6 @@ const output = 1; // Duplicates are ignored
  * @returns {Array} Forecast report for 12 months
  */
 ```
-
-**Calculation Logic**:
-For each month:
-1. Start with initial stock
-2. Apply restock
-3. Apply loss
-4. The result is the end of month stock
-5. This becomes the initial stock for the next month
 
 **Example**:
 ```javascript
